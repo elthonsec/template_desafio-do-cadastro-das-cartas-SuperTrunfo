@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+int main(){
+    //Dados da Carta 1
+    char letra[1];
+    char cdcarta[10];
+    char nmcidade[10];
+    int população;
+    float area;
+    float pib;
+    int ptrsc;
+
+    //Dados da carta 2
+    char letra2[1];
+    char cdcarta2[10];
+    char nmcidade2[10];
+    int populaçao2;
+    float area2;
+    float pib2;
+    int ptrsc2;
+
+    // Entrada de dados Carta 1
+    printf("===========================================\n");
+
+    printf("carta1:\n");
+    printf("===========================================\n");
+    
+    printf("Digite uma letra de A a H(representando um dos oito estados): ");
+    scanf("%s",&letra);
+
+    printf("A letra do estado seguido de um numero de 01 a 04(ex:A01,B03): ");
+    scanf("%s",&cdcarta);
+
+    printf("O nome da cidade:");
+    scanf("%s",&nmcidade);
+
+    printf("O numero de habitantes da cidade: ");
+    scanf("%d",&população);
+
+    printf("A area da cidade em Km2: ");
+    scanf("%f",&area);
+
+    printf("O produto interno bruto da cidade: ");
+    scanf("%f",&pib);
+
+    printf("A quantidade de pontos turisticos: ");
+    scanf("%d",&ptrsc);
+
+    printf("===========================================\n");
+    
+    //Entrada dados carta 2
+
+    printf("entrada carta 2\n");
+
+    printf("===========================================\n");
+
+    printf("Digite uma letra de A a H(representando um dos oito estados):");
+    scanf("%s",&letra2);
+
+    printf("A letra do estado seguido de um numero de 01 a 04(ex:A01,B04):");
+    scanf("%s",&cdcarta2);
+
+    printf("O nome do cidade:");
+    scanf("%s",&nmcidade2);
+
+    printf("o numero de habitantes da cidade:");
+    scanf("%d",&populaçao2);
+
+    printf("A area da cidade em km²:");
+    scanf("%f",&area2);
+    
+    printf("O produto interno bruto da cidade:");
+    scanf("%f",&pib2);
+
+    printf("A quantidade de pontos turisticos:");
+    scanf("%d",&ptrsc2);
+
+    printf("=============================================\n");
+
+    //Resultado dados carta 1
+
+    printf("Carta 1:\nletra de A a H:%s\nCodigo da carta:%s\nnome da cidade:%s\npopulacao:%d\nArea Km²:%.2f\nPIb per capta:%.2f\nA quantidade de pontos turisticos:%d\n",letra,cdcarta,nmcidade, população,area,pib,ptrsc);
+
+printf("=============================================\n");
+
+    //Resultado Dados carta 2
+    printf("Carta2:\nletra de A a H:%s\nCodigo da carta:%s\nNome da cidade:%s\npopulacao:%d\nArea km²:%.2f\nPIB per capta:%.2f\nA quantidade de pontos turisticos:%d\n",letra2,cdcarta2,nmcidade2,populaçao2,area2,pib2,ptrsc2);
+return 0;
+}
